@@ -24,4 +24,3 @@ resource "fortiappseccloud_waf_app" "app_example" {
   cdn                   = false
   continent_cdn         = false
 }
-
