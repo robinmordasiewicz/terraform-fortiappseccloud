@@ -9,7 +9,7 @@ terraform {
 
 provider "fortiappseccloud" {
   hostname  = "api.appsec.fortinet.com"
-  api_token = "specify your token"
+  api_token = "token"
 }
 
 resource "fortiappseccloud_waf_app" "app_example" {
@@ -19,7 +19,7 @@ resource "fortiappseccloud_waf_app" "app_example" {
     http  = 80
     https = 443
   }
-  origin_server_ip      = "your server ip"
+  origin_server_ip      = "1.1.1.1"
   origin_server_service = "HTTPS"
   cdn                   = false
   continent_cdn         = false
